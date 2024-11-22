@@ -1,6 +1,10 @@
 # Geometrical-X-lets-for-Image-Denoising
 # Synthetic OCT Denoising using Various Transform Techniques
 
+If you use these codes, please cite our paper: "Geometrical X-lets for Image Denoising"
+
+https://ieeexplore.ieee.org/document/8856318
+
 This repository contains MATLAB code for denoising synthetic Optical Coherence Tomography (OCT) images. The code applies different X-let transform techniques to remove speckle noise from synthetic OCT images, including Curvelet Transform, Steerable Pyramids, Discrete Wavelet Transform (DWT), Complex Wavelet Transform (CWT), and Contourlet Transform.
 
 ## Files
@@ -14,7 +18,7 @@ This script reads a synthetic OCT image, applies speckle noise, and performs log
 This function performs denoising on the input image using the Circlet transform with soft or hard thresholding. It applies a frequency domain thresholding method to reduce noise and reconstruct the image.
 - **Parameters**:
   - `f`: Input noisy image.
-  - `N`: Number of filters for the CT.
+  - `N`: Number of filters for the Circlet transform.
   - `r0`: Radius range for candidate circles.
   - `Sigma`: Noise standard deviation.
   - `method`: Thresholding method (`'s'` for soft, `'h'` for hard).
